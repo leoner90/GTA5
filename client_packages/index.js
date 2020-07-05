@@ -4,7 +4,7 @@ require("login/login.js");
 require("colshapes/index.js");
 require("blips/index.js");
 
-require("charcreator/index.js");
+ 
 
 mp.gui.chat.show(true);
 mp.gui.chat.activate(false);
