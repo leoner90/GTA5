@@ -1,0 +1,13 @@
+{
+	"maxplayers": 1000,
+	"name": "Leoner",
+	"gamemode": "roleplay",
+	"stream-distance": 300.0,
+	"announce": true,
+	"language": "ru",
+	"csharp": "enabled",
+	"bind": "192.168.0.119",
+	"port": 22005,
+	"voice-chat": true,
+	"disallow-multiple-connections-per-ip": false
+}

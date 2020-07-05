@@ -1,0 +1,260 @@
+
+==================[7/3/2020 7:59:43 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/3/2020 7:59:43 PM]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+   at IMySqlValue MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(int index, bool checkNull)
+   at string MySql.Data.MySqlClient.MySqlDataReader.GetString(int i)
+   at string MySql.Data.MySqlClient.MySqlDataReader.GetString(string column)
+   at void Leoner.Main.authorisation(Client player, string user, string password, int state) in C:\Users\leoni\Desktop\server2\Server\Leoner\Main.cs:line 41
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[7/3/2020 8:00:48 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/3/2020 8:00:48 PM]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+   at IMySqlValue MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(int index, bool checkNull)
+   at string MySql.Data.MySqlClient.MySqlDataReader.GetString(int i)
+   at string MySql.Data.MySqlClient.MySqlDataReader.GetString(string column)
+   at void Leoner.Main.authorisation(Client player, string user, string password, int state) in C:\Users\leoni\Desktop\server2\Server\Leoner\Main.cs:line 41
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[7/3/2020 8:01:45 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/3/2020 8:01:45 PM]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+   at IMySqlValue MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(int index, bool checkNull)
+   at string MySql.Data.MySqlClient.MySqlDataReader.GetString(int i)
+   at string MySql.Data.MySqlClient.MySqlDataReader.GetString(string column)
+   at void Leoner.Main.authorisation(Client player, string user, string password, int state) in C:\Users\leoni\Desktop\server2\Server\Leoner\Main.cs:line 41
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[7/3/2020 8:13:24 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/3/2020 8:13:28 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/3/2020 8:21:28 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/3/2020 8:22:09 PM]==================
+System.InvalidOperationException: The CommandText property has not been properly initialized.
+   at void MySql.Data.MySqlClient.Interceptors.ExceptionInterceptor.Throw(Exception exception)
+=========================================================
+
+==================[7/3/2020 8:22:29 PM]==================
+System.InvalidOperationException: The CommandText property has not been properly initialized.
+   at void MySql.Data.MySqlClient.Interceptors.ExceptionInterceptor.Throw(Exception exception)
+=========================================================
+
+==================[7/3/2020 9:10:02 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 3:06:45 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 3:10:11 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 3:10:15 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 3:11:33 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 3:11:42 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 3:14:59 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 3:30:34 PM]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+=========================================================
+
+==================[7/4/2020 3:33:42 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 3:34:31 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@username' has already been defined.
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, int index)
+=========================================================
+
+==================[7/4/2020 3:34:31 PM]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@username' has already been defined.
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, int index)
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.Add(MySqlParameter value)
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.AddWithValue(string parameterName, object value)
+   at void Leoner.Main.authorisation(Client player, int state, string user, string email, string psw, string pswRepeat) in C:\Users\leoni\Desktop\server2\Server\Leoner\Main.cs:line 73
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[7/4/2020 3:36:19 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@username' has already been defined.
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, int index)
+=========================================================
+
+==================[7/4/2020 3:36:19 PM]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@username' has already been defined.
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, int index)
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.Add(MySqlParameter value)
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.AddWithValue(string parameterName, object value)
+   at void Leoner.Main.authorisation(Client player, int state, string user, string email, string psw, string pswRepeat) in C:\Users\leoni\Desktop\server2\Server\Leoner\Main.cs:line 73
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[7/4/2020 3:37:53 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@username' has already been defined.
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, int index)
+=========================================================
+
+==================[7/4/2020 3:37:53 PM]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@username' has already been defined.
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.InternalAdd(MySqlParameter value, int index)
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.Add(MySqlParameter value)
+   at MySqlParameter MySql.Data.MySqlClient.MySqlParameterCollection.AddWithValue(string parameterName, object value)
+   at void Leoner.Main.authorisation(Client player, int state, string user, string email, string psw, string pswRepeat) in C:\Users\leoni\Desktop\server2\Server\Leoner\Main.cs:line 73
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[7/4/2020 6:07:19 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/4/2020 7:40:20 PM]==================
+System.ArgumentException: The parameter 'address' cannot be an empty string. (Parameter 'address')
+   at new System.Net.Mail.MailAddress(string address, string displayName, Encoding displayNameEncoding)
+=========================================================
+
+==================[7/4/2020 7:40:23 PM]==================
+System.ArgumentException: The parameter 'address' cannot be an empty string. (Parameter 'address')
+   at new System.Net.Mail.MailAddress(string address, string displayName, Encoding displayNameEncoding)
+=========================================================
+
+==================[7/4/2020 7:42:29 PM]==================
+System.FormatException: The specified string is not in the form required for an e-mail address.
+   at int System.Net.Mail.MailAddressParser.ReadCfwsAndThrowIfIncomplete(string data, int index)
+=========================================================
+
+==================[7/4/2020 7:46:49 PM]==================
+System.ArgumentException: The parameter 'address' cannot be an empty string. (Parameter 'address')
+   at new System.Net.Mail.MailAddress(string address, string displayName, Encoding displayNameEncoding)
+=========================================================
+
+==================[7/4/2020 7:51:28 PM]==================
+System.FormatException: The specified string is not in the form required for an e-mail address.
+   at int System.Net.Mail.MailAddressParser.ReadCfwsAndThrowIfIncomplete(string data, int index)
+=========================================================
+
+==================[7/4/2020 7:51:33 PM]==================
+System.FormatException: The specified string is not in the form required for an e-mail address.
+   at int System.Net.Mail.MailAddressParser.ReadCfwsAndThrowIfIncomplete(string data, int index)
+=========================================================
+
+==================[7/4/2020 7:51:43 PM]==================
+System.FormatException: An invalid character was found in the mail header: '@'.
+   at int System.Net.Mail.DotAtomReader.ReadReverse(string data, int index)
+=========================================================
+
+==================[7/4/2020 7:51:45 PM]==================
+System.FormatException: An invalid character was found in the mail header: '@'.
+   at int System.Net.Mail.DotAtomReader.ReadReverse(string data, int index)
+=========================================================
+
+==================[7/4/2020 8:29:58 PM]==================
+System.ArgumentException: The parameter 'address' cannot be an empty string. (Parameter 'address')
+   at new System.Net.Mail.MailAddress(string address, string displayName, Encoding displayNameEncoding)
+=========================================================
+
+==================[7/4/2020 8:31:04 PM]==================
+System.ArgumentException: The parameter 'address' cannot be an empty string. (Parameter 'address')
+   at new System.Net.Mail.MailAddress(string address, string displayName, Encoding displayNameEncoding)
+=========================================================
+
+==================[7/4/2020 8:31:34 PM]==================
+System.ArgumentException: The parameter 'address' cannot be an empty string. (Parameter 'address')
+   at new System.Net.Mail.MailAddress(string address, string displayName, Encoding displayNameEncoding)
+=========================================================
+
+==================[7/4/2020 8:32:43 PM]==================
+System.ArgumentException: The parameter 'address' cannot be an empty string. (Parameter 'address')
+   at new System.Net.Mail.MailAddress(string address, string displayName, Encoding displayNameEncoding)
+=========================================================
+
+==================[7/5/2020 4:14:15 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/5/2020 4:14:17 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
+
+==================[7/5/2020 4:14:26 PM]==================
+System.ArgumentException: The parameter 'address' cannot be an empty string. (Parameter 'address')
+   at new System.Net.Mail.MailAddress(string address, string displayName, Encoding displayNameEncoding)
+=========================================================
+
+==================[7/5/2020 5:11:40 PM]==================
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at IMySqlValue MySql.Data.MySqlClient.ResultSet.get_Item(int index)
+=========================================================
