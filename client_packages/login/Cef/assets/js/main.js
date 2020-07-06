@@ -1,5 +1,5 @@
-function sendAccountInfo( state) {
-    $('.alert-danger').hide();
+function sendAccountInfo(state) {
+    $('.errors').hide();
     if(state === 0){    //Login State
         let login = document.getElementById("loginName");
         let Psw = document.getElementById("loginPass");

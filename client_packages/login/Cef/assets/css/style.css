@@ -1,15 +1,18 @@
 ﻿html body {
     background-color: rgba(0, 0, 0, 1);
-    background-image: url('https://thumbs.gfycat.com/ValuablePoliteBlackbuck-size_restricted.gif'); background-size: cover;
+    background-image: url('https://wallpapercave.com/wp/wp2562825.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
 }
  
 .container-fluid {
+    height: 100vh;
     background-color: rgba(0,0,0,.7);
     padding: 0;
 }
 
 .card-body {
+    background-color: rgba(0,0,0,.7);
     margin: 13% auto;
     max-width: 400px;
     min-height: 500px;
@@ -50,7 +53,7 @@
     background-color: transparent;
 }
 
-.alert-danger {
+.errors {
     display: none;
 }
 
@@ -89,7 +92,8 @@
     background-color: #38903d;
     box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
     text-align: center;
-    width:100%;
+    width: 100%;
+    cursor: pointer;
 }
 
 #registerBtn {
@@ -98,4 +102,12 @@
 
 .authorisation-forms input {
     margin: 12px 0;
+}
+
+
+
+
+.btn.disabled ,
+.btn:disabled{
+    opacity: 0.25;
 }

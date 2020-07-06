@@ -3,8 +3,6 @@ require("VehManager/vehicleManager.js");
 require("login/login.js");
 require("colshapes/index.js");
 require("blips/index.js");
-require("weatherAndTime/index.js");
-require("disconnect/index.js");
 
 //require("charcreator/index.js");
 

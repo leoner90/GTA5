@@ -1,5 +1,8 @@
 ﻿using GTANetworkAPI;
 using MySql.Data.MySqlClient;
+using System;
+using System.Text.RegularExpressions;
+
 namespace Leoner
 {
     class Authorisation : Script
@@ -7,10 +10,11 @@ namespace Leoner
         [RemoteEvent]
         public void loginDataToServer(Client player, int state, string user, string email, string psw, string pswRepeat)
         {
-            string myConnectionString = "Database=users;Data Source=localhost;User Id=leoner;Password=jata1234";
-            MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-            myConnection.Open();
-            MySqlCommand command = myConnection.CreateCommand();
+            string[] errors = new string[4];
+            MySql newConnection = new MySql();
+            MySqlConnection mysqlConnection = newConnection.Initialize();
+            MySqlCommand command = mysqlConnection.CreateCommand();
+            mysqlConnection.Open();
             switch (state)
             {
                 case 0:
@@ -26,55 +30,63 @@ namespace Leoner
                             if (pass == psw)
                             {
                                 player.TriggerEvent("loginHandler", "success");
-                                myConnection.Close();
+                                newConnection.CloseConnection();
                             } else {
-                                player.TriggerEvent("loginHandler", "incorrectinfo");
+                                errors[0] = "Неверные данные";
+                                player.TriggerEvent("loginHandler", "incorrectinfo" , errors);
                             }
                         }
                     } catch {
-                        player.TriggerEvent("loginHandler", "incorrectinfo");
+                        errors[0] = "Неверные данные";
+                        player.TriggerEvent("loginHandler", "incorrectinfo", errors);
                     }
                     break;
-                case 1:
-                    string[] errors = new string[4];
+                case 1: 
                     // Registration State
-                    if (user.Length <= 3 && psw.Length <= 5)
+                      
+                    if (user.Length < 5 || psw.Length < 5)
                     {
                         errors[0] = "Логин или пароль слишком короткий";
-
                     }
+
                     if (psw != pswRepeat)
                     {
                         errors[1] = "Пароли не совпадают";
                     }
-                    try
-                    {
-                        var addr = new System.Net.Mail.MailAddress(email);
-                        //+ REG EXP TO DO
-                    }
-                    catch
+
+                    //EMAIL
+                    bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase); ;
+                    if (!isEmail)
                     {
                         errors[2] = "Email введен неверно";
                     }
-                    //Check if user exist in db -> Error 3 if not
 
+                    //check user allready exist   
+                    MySqlCommand check_User_Name = new MySqlCommand("SELECT count(*) FROM accounts WHERE username = @username", mysqlConnection);
+                    check_User_Name.Parameters.AddWithValue("@username", user);
+                    int UserExist = (int)(long)check_User_Name.ExecuteScalar();
+                    if (UserExist > 0)
+                    {
+                        errors[3] = "Этот логин уже используется";
+                    }
+            
 
                     if (errors[0] == null && errors[1] == null && errors[2] == null && errors[3] == null)
                     {
-                        //check user allready exist    
                         command.CommandText = "INSERT INTO accounts (username , password , money) VALUES (@username , @password , '0')";
                         command.Parameters.AddWithValue("@username", user);
                         command.Parameters.AddWithValue("@password", psw);
                         command.ExecuteNonQuery();
+                        newConnection.CloseConnection();
                         player.TriggerEvent("loginHandler", "registered");
                     } else {
-                        player.TriggerEvent("incorrectinfo");
+                        player.TriggerEvent("loginHandler", "incorrectinfo" , errors);
                     }
                     break;
                 default:
                     //default
                     break;
-            }    
+            } 
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using GTANetworkAPI;
+using MySql.Data.MySqlClient;
+using System;
 
 namespace Leoner
 {
@@ -8,7 +10,7 @@ namespace Leoner
         [ServerEvent(Event.ResourceStart)]
 
         public void onServerStart()
-        {
+        {      
             NAPI.Server.SetAutoSpawnOnConnect(false);
             NAPI.Server.SetAutoRespawnAfterDeath(false);
         }

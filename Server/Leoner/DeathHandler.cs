@@ -1,4 +1,5 @@
 ﻿using GTANetworkAPI;
+using System.Threading.Tasks;
 namespace Leoner
 {
     class DeathHandler : Script
