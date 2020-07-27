@@ -1,9 +1,4 @@
-﻿using Google.Protobuf.WellKnownTypes;
-using GTANetworkAPI;
-using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using GTANetworkAPI;
 
 namespace Leoner
 {

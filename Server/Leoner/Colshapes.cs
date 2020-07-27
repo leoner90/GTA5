@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using GTANetworkAPI;
+﻿using GTANetworkAPI;
 
 namespace Leoner
 {
@@ -27,7 +24,6 @@ namespace Leoner
                 NAPI.Player.SpawnPlayer(player, new Vector3(460.2378, -994.386, 24.91486));
                 NAPI.Chat.SendChatMessageToPlayer(player, "~r~ Arrested!");
             }
-
         }
     }
 }

@@ -1,0 +1,17 @@
+.phone-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 70px;
+    background-image: url("../img/phoneScreen.gif");
+    background-size: cover;
+    height: 430px;
+    width: 240px;
+    border-radius: 20px;
+}
+
+.phone-frame-img {
+    height: 450px;
+    width: 250px;
+    margin: -7px 0 0 -4px;
+}

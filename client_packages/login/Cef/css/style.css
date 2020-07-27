@@ -1,0 +1,111 @@
+﻿html body {
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+ 
+.container-fluid {
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    padding: 0;
+}
+
+.card-body {
+    background-color: rgba(0,0,0,.7);
+    margin: 13% auto;
+    max-width: 400px;
+    min-height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 50px 40px 33px 40px;
+    background-color: rgba(255,255,255,0.9);
+    color: #ccc;
+    border: 14px solid #757474;
+}
+
+.authorisation-logo {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+}
+
+.brand-name {
+    font-style: italic;
+    font-family: Notable, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #bb0101;
+    padding: 6px;
+}
+
+#login-tab,
+#register-tab {
+    font-family: Poppins, sans-serif;
+    color: #6d6d6d;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.menu {
+    background-color: transparent;
+}
+
+.errors {
+    display: none;
+}
+
+#loginName,
+#loginPass,
+#registerName,
+#email,
+#regPsw,
+#regPsw-repeat {
+    outline: none;
+    border: none;
+    font-family: Poppins-Regular, sans-serif;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    padding: 0 5px;
+    border-bottom: 2px solid #adadad;
+}
+
+#loginBtn,
+#registerBtn {
+    display: block;
+    padding: 0.7em 2.7em;
+    margin: 30px auto 0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #38903d;
+    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+#registerBtn {
+    background-color: #008bc7;
+}
+
+.authorisation-forms input {
+    margin: 12px 0;
+}
+
+.btn.disabled ,
+.btn:disabled{
+    opacity: 0.25;
+}

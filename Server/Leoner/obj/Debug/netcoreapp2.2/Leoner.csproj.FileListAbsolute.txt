@@ -1,0 +1,4 @@
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp2.2\Leoner.csprojAssemblyReference.cache
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp2.2\Leoner.AssemblyInfoInputs.cache
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp2.2\Leoner.AssemblyInfo.cs
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp2.2\Leoner.csproj.CoreCompileInputs.cache

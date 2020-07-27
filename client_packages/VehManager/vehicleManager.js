@@ -60,7 +60,7 @@ mp.keys.bind(0x42, true, _ => {
     if (state === 0 && localPlayer.vehicle) {
         if (UI === null) {
             mp.gui.cursor.visible = true;
-            UI = mp.browsers.new('package://VehManager/Manager/index.html')
+            UI = mp.browsers.new('package://vehManager/Manager/index.html')
             state = 1;
             updateStatus();
         } else {

@@ -1,0 +1,38 @@
+Autorisation
+	login check is username exist or not , not throught try catch
+	2 login with same id at once (if there is player with this id - disconect him  and connect new one )
+	email confirmation
+	mail reset password/login
+	RageEXP for login/password
+	Password md5
+	teleport player to sky and freeze , too other people couldn't see him
+	Exit button if possible
+	email code upadte
+
+Create player
+	Camera error only on registration or first login
+	Add color parametr for changing parents
+
+Bus driver Quest
+	0 create the bus and restrikt to use it if u don't have permision
+	1 speak with santa on F
+	2 get persmision to use the bus
+	3 make marshrute from colshapes
+	4 reword by the end of cercle
+
+telepot to user name or id + teleport function with name (goto carpark without if)
+
+maping add car
+ 
+inventory -> shop -> trunk
+
+interacting with objects, npc, characters how to get id
+
+weather transation
+
+voice chat
+
+mobile
+
+fractions
+

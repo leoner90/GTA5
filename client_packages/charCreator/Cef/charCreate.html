@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/charCreator.css">
+</head>
+<body style="background-color: transparent;">
+    <div class="content" style="padding:20px;">
+        <img class="change-character-logo" src="img/awakeLogo.png" />
+        <div id="nameError">
+            Введите имя и фамилию
+        </div>
+        <input id="name" class="form-control" type="text" placeholder="ИМЯ (min 3)" />
+        <input id="surname" class="form-control" type="text" placeholder="Фамилия (min 3)" />
+
+        <div style="text-align:center;">
+            <button class="btn gender" onclick="updateGender('setGender' , 'mp_m_freemode_01')" value="1885233650">Мужской</button>
+            <button class="btn gender" onclick="updateGender('setGender' , 'mp_f_freemode_01')" value="1885233650">Женский</button>
+        </div>
+
+        <label class="character-settings-label">Отец:</label>
+        <input class="character-settings-input" id="father" type="range" min="0" max="45" step="1" value="0" onchange="updateParents()">
+
+        <label class="character-settings-label">Мать:</label>
+        <input class="character-settings-input" id="mother" type="range" min="0" max="45" step="1" value="0" onchange="updateParents()">
+
+        <label class="character-settings-label">Волосы:</label>
+        <input class="character-settings-input" id="hair" type="range" min="0" max="74" step="1" value="0" onchange="updateAppearance('setHair',this.value)">
+
+        <label class="character-settings-label">Брови:</label>
+        <input class="character-settings-input" id="eyeBrows" type="range" min="0" max="34" step="1" value="0" onchange="updateAppearance('setEyebrows',this.value)">
+
+        <label class="character-settings-label">Бородка:</label>
+        <input class="character-settings-input" id="faceHair" type="range" min="0" max="29" step="1" value="0" onchange="updateAppearance('setFacialHair',this.value)">
+
+        <label class="character-settings-label">Цвет волос:</label>
+        <input class="character-settings-input" id="hairColor" type="range" min="0" max="74" step="1" value="0" onchange="updateAppearance('setHairColor',this.value)">
+
+        <label class="character-settings-label">Цвет глаз:</label>
+        <input class="character-settings-input" id="eyeColor" type="range" min="0" max="25" step="1" value="0" onchange="updateAppearance('setEyeColor',this.value)">
+
+        <label class="character-settings-label lipstick-label">Цвет Губ:</label>
+        <input class="character-settings-input" id="lipstickColor" type="range" min="0" max="7" step="1" value="0" onchange="updateAppearance('setLipstick',this.value)">
+
+        <label class="character-settings-label">Цвет кожи:</label>
+        <input class="character-settings-input" id="skinColor" type="range" min="0" max="45" step="1" value="0" onchange="setSkinColor(this.value)">
+
+        <div class="face-change-wrapper">
+            <button class="btn change-face-btn" onclick="$('#face-controle').toggle(500);">Изменить лицо</button>
+            <span class="glyphicon glyphicon-menu-down"></span>
+            <div id="face-controle" style="padding:10px;">
+                <label class="character-settings-label">Ширина носа:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(0,this.value)">
+                <label class="character-settings-label">Высота носа:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(1,this.value)">
+                <label class="character-settings-label">Длина кончика носа:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(2,this.value)">
+                <label class="character-settings-label">Глубина моста носа:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(3,this.value)">
+                <label class="character-settings-label">Высота кончика носа:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(4,this.value)">
+                <label class="character-settings-label">Поломаность носа:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(5,this.value)">
+                <label class="character-settings-label">Высота бровей:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(6,this.value)">
+                <label class="character-settings-label">Глубина бровей:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(7,this.value)">
+                <label class="character-settings-label">Высота скул:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(8,this.value)">
+                <label class="character-settings-label">Ширина скул:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(9,this.value)">
+                <label class="character-settings-label">Глубина щеки:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(10,this.value)">
+                <label class="character-settings-label">Размер глаз:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(11,this.value)">
+                <label class="character-settings-label">Толщина губ:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(12,this.value)">
+                <label class="character-settings-label">Ширина челюсти:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(13,this.value)">
+                <label class="character-settings-label">Форма челюсти:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(14,this.value)">
+                <label class="character-settings-label">Высота подбородка:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(15,this.value)">
+                <label class="character-settings-label">Глубина подбородка:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(16,this.value)">
+                <label class="character-settings-label">Ширина подбородка:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(17,this.value)">
+                <label class="character-settings-label">Подбородочный отступ:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(18,this.value)">
+                <label class="character-settings-label">Обхват шеи:</label>
+                <input class="face-change-input" type="range" min="-10" max="10" step="1" value="0" onchange="setFaceAppearance(19,this.value)">
+            </div>
+        </div>
+        <button class="btn btn-danger" id="savebtn" onclick="save()">СОЗДАТЬ</button>
+    </div>
+
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="js/charCreator.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 	"name": "Leoner",
 	"gamemode": "roleplay",
 	"stream-distance": 300.0,
-	"announce": true,
+	"announce": false,
 	"language": "ru",
 	"csharp": "enabled",
 	"bind": "192.168.0.119",

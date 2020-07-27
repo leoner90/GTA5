@@ -79,3 +79,10 @@ C:\Users\leoni\Desktop\server2\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.cspr
 C:\Users\leoni\Desktop\server2\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.csproj.CopyComplete
 C:\Users\leoni\Desktop\server2\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.dll
 C:\Users\leoni\Desktop\server2\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.pdb
+C:\Users\leoni\Desktop\server2\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.csprojAssemblyReference.cache
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.csprojAssemblyReference.cache
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.AssemblyInfoInputs.cache
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.AssemblyInfo.cs
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.csproj.CoreCompileInputs.cache
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.dll
+C:\Users\leoni\Desktop\new\Server\Leoner\obj\Debug\netcoreapp3.0\Leoner.pdb

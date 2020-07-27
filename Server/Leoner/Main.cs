@@ -1,29 +1,22 @@
 ﻿using GTANetworkAPI;
-using MySql.Data.MySqlClient;
-using System;
 
 namespace Leoner
 {
     public class Main : Script
     {
-        Colshapes Colshapes = new Colshapes(); // Triggers server events when player enters appropriate colshape
-        Authorisation Authorisation = new Authorisation(); // Server authorisation Sign in / Register new Acc.
-        OnResourceStart OnResourceStart = new OnResourceStart(); // On Server Loading Events.
-        OnPlayerConnect OnPlayerConnect = new OnPlayerConnect(); // When new player connected Events.
-        AdminCommands AdminCommands = new AdminCommands(); //Remote Events For Admin.
-        DeathHandler DeathHandler = new DeathHandler(); //On Player Death And killer arrest
-
-        [RemoteEvent]
-        public void serverTimeAndWeather(Client player, int time, string weather)
+        //BASIC SERVER SETUPS
+        [ServerEvent(Event.ResourceStart)]
+        public void onServerStart()
         {
-            NAPI.World.SetTime(time, 0, 0);
-            NAPI.World.SetWeather(weather);
+            NAPI.Server.SetAutoSpawnOnConnect(false);
+            NAPI.Server.SetAutoRespawnAfterDeath(false);
         }
 
-        [ServerEvent(Event.PlayerDisconnected)]
-        public void OnPlayerDisconnect(Client player)
+        //AT SPAWN
+        [ServerEvent(Event.PlayerConnected)]
+        public void newPlayerConn(Client client)
         {
-            player.TriggerEvent("disconnect");
+            NAPI.Chat.SendChatMessageToPlayer(client, "~y~ system call  /help");
         }
     }
 }

@@ -1,0 +1,22 @@
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.money-wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    padding: 3px 20px;
+    border-radius: 6px;
+    font-size: 36px;
+    color: #ca1717;
+    font-family: 'Merienda One', cursive;
+}
+
+.currency-sign {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}

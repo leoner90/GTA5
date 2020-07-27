@@ -1,0 +1,54 @@
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.content {
+    background-color: rgba(0,0,0,0.7);
+    min-height: 100vh;
+    padding: 15% 0 ;
+}
+
+.charSelect {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 75px 5px;
+    min-height: 300px;
+    width: 15%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#charSelectBtn {
+    display: block;
+    padding: 0.7em 2.7em;
+    margin: 30px auto 0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #6b0000;
+    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+    text-align: center;
+    width: 60%;
+    cursor: pointer;
+}
+
+#charSelectImg {
+    display: block;
+    margin: 0 auto;
+    height:200px;
+    width: 200px;
+}
+
+#charSelectWelcomeText {
+    text-align: center;
+    color: #504e4e;
+    font-weight: bold;
+}

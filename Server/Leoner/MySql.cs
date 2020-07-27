@@ -18,7 +18,7 @@ namespace Leoner
         public MySqlConnection Initialize()
         {
             server = "localhost";
-            database = "users";
+            database = "gta5";
             uid = "leoner";
             password = "jata1234";
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
@@ -31,8 +31,6 @@ namespace Leoner
             try
             {
                 connection.Open();
-                Console.BackgroundColor = ConsoleColor.Green;
-                Console.WriteLine("MYSQL CONNECTED");
                 return true;
             }
             catch (Exception ex)
@@ -49,12 +47,11 @@ namespace Leoner
             try
             {
                 connection.Close();
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.WriteLine("Connection closed");
                 return true;
             }
             catch (MySqlException ex)
             {
+                Console.BackgroundColor = ConsoleColor.Red;
                 Console.WriteLine(ex);
                 return false;
             }
